@@ -5,24 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini CRM project</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
 <body>
     <!--HEADER-->
     <header>
+        <style>
+            header {
+                background-color: #37f347;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* light shadow */
+                padding: 10px 0;
+                position: sticky; /* fix header */
+                top: 0;
+                z-index: 1000;
+            }
+
+            nav {
+                display: flex;
+                width: 100%;       /* Розтягуємо на всю ширину батьківського елемента */
+                max-width: 1100px; /* Але не більше 1000px */
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+            nav ul {
+                display: flex;
+                width: 100%;        /* Розтягуємо список */
+                justify-content: space-between; /* Розподіляємо пункти меню */
+                list-style-type: none; 
+                padding: 10px 20px;
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+            }
+            nav li {
+                display: inline; /* in one row */
+                margin-right: 20px; /* distance between points */
+            }
+
+            nav a {
+                text-decoration: none; /* remove standart understike */
+                color: #34495e;
+                font-weight: 600;
+                font-size: 15px;
+                transition: color 0.3s;
+            }
+
+            nav a:hover {
+                color: #27ae60;
+            }
+        </style>
+
         <!--here place a logo, a name and a slogan of the COmpany-->
-        <div>
-            <img src="images/logo.jpg" 
-                alt="Logo" 
-                width=150px
-                />
-            <div>
-                <h1>SimAccu</h1>
-                <p>Accounting that matter</p>
+        <div class="header-container">
+            <div id="brand">
+                <img id="logo" src="images/logo.jpg" 
+                    alt="Logo" 
+                    width=150px
+                    />
+                <div>
+                    <h1 style="color: #1a252f">SimAccu</h1>
+                    <p class="motto">Accounting that matter</p>
+                </div>
             </div>
         </div>
         <!--main navigation-->
-        <div>
+        <div class="header-nav">
             <!--temporary without pages to understand how to add pages-->
             <nav>
                 <ul>
@@ -36,36 +84,73 @@
         </div>
     </header>
     <!--MAIN-->
-    <main>
+    <main id="main_body">
+        <style>
+            table {
+                width: 100%;                /* fit all section */
+                border-collapse: collapse;  /* colapse border */
+                margin: 20px 0;             /* padding up and bottom */
+                background-color: #ffffff;
+                border-radius: 8px;
+                overflow: hidden;           /* for working of border radius */
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+
+            th {
+                background-color: #104901;  /* Темно-зелений як у футері */
+                color: #ffffff;             /* Білий текст */
+                padding: 15px;              /* Внутрішні відступи */
+                text-align: left;           /* Вирівнювання по лівому краю */
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            td {
+                padding: 12px 15px;         /* Внутрішні відступи */
+                border-bottom: 1px solid #e0e0e0; /* Тонка лінія розділення */
+                color: #333333;
+                line-height: 1.5;           /* Щоб текст легше читався */
+            }
+
+            /* zebra for rows */
+            tr:nth-child(even) {
+                background-color: #f9f9f9;  /* seconds row darker */
+            }
+
+            tr:hover {
+                background-color: #f1f8f1;
+            }
+        </style>
         <!--here place main advantages of the Company-->
         <!--Style: 3 containers horisontally (left - image, right pro and short description)-->
-        <section>
-            <div>
+        <section class="advantage_container">
+            <div class="advantage_block">
                 <img src="images/money.jpg"
                     alt="Efficiency"
-                    width=100px
+                    width=180px
                     />
-                <div>
+                <div class="advantage_text">
                     <h2>Efficiency</h2>
                     <p>Skyrocket your business with efficient instument</p>
                 </div>
             </div>
-            <div>
+            <div class="advantage_block">
                 <img src="images/security.jpg"
                     alt="Security"
-                    width=100px
+                    width=180px
                     />
-                <div>
+                <div class="advantage_text">
                     <h2>Security</h2>
-                    <p></p>
+                    <p>No worries about yout data</p>
                 </div>
             </div>
-            <div>
+            <div class="advantage_block">
                 <img src="images/practical.jpg"
                     alt="Practical"
-                    width=100px
+                    width=180px
                     />
-                <div>
+                <div class="advantage_text">
                     <h2>Control</h2>
                     <p>Make accessable all documents in any place and any time</p>
                 </div>
@@ -130,13 +215,16 @@
         </section>
     </main>
     <!--FOOTER-->
-    <footer>
-        <ul>
-            <li>Author: Oleksandr Okolot</li>
-            <li>Kyiv</li>
-            <li>2025</li>
+    <footer id="main-footer">
+    <div class="footer-content">
+        <p class="copyright">&copy; 2025 SimAccu Project</p>
+        <ul class="footer-info">
+            <li><span>Author:</span> Oleksandr Okolot</li>
+            <li><span>Location:</span> Kyiv, Ukraine</li>
+            <li><span>Year:</span> 2025</li>
         </ul>
-    </footer>  
+    </div>
+</footer>
 </body>
 
 </html>

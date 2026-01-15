@@ -1,0 +1,168 @@
+body {
+    background-color: #a5f7a262;
+    font-family: Arial, sans-serif;
+    margin: 0; /* change standard browser margin */
+}
+
+footer {
+    background-color: #104901;
+    color: #f8f7f7;
+    padding: 15px;            /* inner padding for text */
+    text-align: center;
+}
+
+/*       HEADER ELEMENTS    */
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Стилізація бренду (лого + текст) */
+#brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header-logo {
+    width: 60px; /* Компактний розмір для хедеру */
+    height: auto;
+    border-radius: 50%; /* Робимо лого круглим для стилю */
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.brand-text .motto {
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+
+/* BODY ELEMENTS */
+
+.advantage_container {
+    display: flex;       /* in row */
+    gap: 15px;          /* distance between card */
+    justify-content: space-around;
+    background-color: #a6e2b3; /* Трохи темніший фон секції */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Селектор класу для карток */
+.advantage_block {
+    flex: 1;
+    display: flex;      /* inner flex */
+    flex-direction: row-reverse; /* image - text */
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* light shadow */
+    width: fit-content;
+}
+
+.advantage_text {
+    flex: auto;
+    text-align: left;
+    margin-right: 10px; /* from img to txt */
+}
+
+
+.advantage_text h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.advantage_text p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555555;
+}
+
+.advantage_block img {
+    flex: 1;                    /* 25% of witth (1/4_ */
+    width: 120px;              
+    height: auto;               /* proportion of img */
+    flex-shrink: 0;             /* forbidden make img lower than 200 */
+    object-fit: contain;        /* stable img */
+}
+
+section {
+    background-color: #a6e2b3; 
+    padding: 20px;             
+    margin-bottom: 20px;       /* distance between sections */
+    border-left: 5px solid #223f2d; /* line on the side */
+    justify-content: center;   /* center */
+    gap: 20px;                 /* space between cards */
+}
+
+#main_body {
+    padding: 30px;        /* inner margin */
+    margin: 20px auto;    /* center position */
+    max-width: 1100px;    /* limit width */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* frame */
+}
+
+/*-----FOOTER------*/
+#main-footer {
+    background-color: #104901; /* Твій темно-зелений колір */
+    color: #ffffff;
+    padding: 40px 0;           /* Збільшуємо відступи для "дихання" */
+    margin-top: 50px;
+    border-top: 4px solid #37f347; /* Яскрава лінія в колір хедера */
+}
+
+.footer-content {
+    max-width: 1100px;         /* Узгоджуємо з шириною main_body */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    /* Елементи один під одним */
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-info {
+    list-style: none;          /* Прибираємо маркери */
+    padding: 0;
+    margin: 0;
+    display: flex;             /* Робимо список горизонтальним */
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-info li {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.footer-info li span {
+    font-weight: bold;         /* Виділяємо підписи "Author", "Location" */
+    color: #37f347;            /* Акцентний колір з хедера */
+    margin-right: 5px;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
