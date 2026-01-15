@@ -28,22 +28,15 @@ footer {
     gap: 15px;
 }
 
-#header-logo {
-    width: 60px; /* Компактний розмір для хедеру */
+#logo {
+    width: 200px;
     height: auto;
-    border-radius: 50%; /* Робимо лого круглим для стилю */
+    border-radius: 50%;
 }
 
-.brand-text h1 {
+.motto {
     margin: 0;
     font-size: 24px;
-    color: #2c3e50;
-    letter-spacing: 1px;
-}
-
-.brand-text .motto {
-    margin: 0;
-    font-size: 12px;
     font-style: italic;
     color: #7f8c8d;
     font-style: italic;
@@ -56,12 +49,12 @@ footer {
     display: flex;       /* in row */
     gap: 15px;          /* distance between card */
     justify-content: space-around;
-    background-color: #a6e2b3; /* Трохи темніший фон секції */
+    background-color: #a6e2b3; /* section color */
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Селектор класу для карток */
+/* cards */
 .advantage_block {
     flex: 1;
     display: flex;      /* inner flex */
@@ -123,27 +116,27 @@ section {
 
 /*-----FOOTER------*/
 #main-footer {
-    background-color: #104901; /* Твій темно-зелений колір */
+    background-color: #104901;
     color: #ffffff;
-    padding: 40px 0;           /* Збільшуємо відступи для "дихання" */
+    padding: 40px 0;
     margin-top: 50px;
-    border-top: 4px solid #37f347; /* Яскрава лінія в колір хедера */
+    border-top: 4px solid #37f347;
 }
 
 .footer-content {
-    max-width: 1100px;         /* Узгоджуємо з шириною main_body */
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;    /* Елементи один під одним */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
 .footer-info {
-    list-style: none;          /* Прибираємо маркери */
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;             /* Робимо список горизонтальним */
+    display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -155,8 +148,8 @@ section {
 }
 
 .footer-info li span {
-    font-weight: bold;         /* Виділяємо підписи "Author", "Location" */
-    color: #37f347;            /* Акцентний колір з хедера */
+    font-weight: bold;         /* "Author", "Location" */
+    color: #37f347;
     margin-right: 5px;
 }
 

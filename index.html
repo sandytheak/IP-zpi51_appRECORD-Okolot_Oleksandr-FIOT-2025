@@ -23,16 +23,16 @@
 
             nav {
                 display: flex;
-                width: 100%;       /* Розтягуємо на всю ширину батьківського елемента */
-                max-width: 1100px; /* Але не більше 1000px */
+                width: 100%;
+                max-width: 1100px;
                 margin: 0 auto;
                 justify-content: center;
             }
 
             nav ul {
                 display: flex;
-                width: 100%;        /* Розтягуємо список */
-                justify-content: space-between; /* Розподіляємо пункти меню */
+                width: 100%;      
+                justify-content: space-between; 
                 list-style-type: none; 
                 padding: 10px 20px;
                 background-color: #f8f9fa;
@@ -64,7 +64,13 @@
                     width=150px
                     />
                 <div>
-                    <h1 style="color: #1a252f">SimAccu</h1>
+                    <h1 style="color: #1a252f;
+                                margin: 0;
+                                font-size: 32px;
+                                font-style: italic;
+                                color: #2c3e50;
+                                letter-spacing: 1px;
+                                ">SimAccu</h1>
                     <p class="motto">Accounting that matter</p>
                 </div>
             </div>
@@ -107,10 +113,10 @@
             }
 
             td {
-                padding: 12px 15px;         /* Внутрішні відступи */
-                border-bottom: 1px solid #e0e0e0; /* Тонка лінія розділення */
+                padding: 12px 15px;
+                border-bottom: 1px solid #e0e0e0;
                 color: #333333;
-                line-height: 1.5;           /* Щоб текст легше читався */
+                line-height: 1.5;
             }
 
             /* zebra for rows */
