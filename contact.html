@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-----HEADER----->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM project</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <style>
+            header {
+                background-color: #37f347;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* light shadow */
+                padding: 10px 0;
+                position: sticky; /* fix header */
+                top: 0;
+                z-index: 1000;
+            }
+
+            nav {
+                display: flex;
+                width: 100%;
+                max-width: 1100px;
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+            nav ul {
+                display: flex;
+                width: 100%;      
+                justify-content: space-between; 
+                list-style-type: none; 
+                padding: 10px 20px;
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+            }
+            nav li {
+                display: inline; /* in one row */
+                margin-right: 20px; /* distance between points */
+            }
+
+            nav a {
+                text-decoration: none; /* remove standart understike */
+                color: #34495e;
+                font-weight: 600;
+                font-size: 15px;
+                transition: color 0.3s;
+            }
+
+            nav a:hover {
+                color: #27ae60;
+            }
+        </style>
+
+        <!--here place a logo, a name and a slogan of the COmpany-->
+        <div class="header-container">
+            <div id="brand">
+                <img id="logo" src="images/logo.jpg" 
+                    alt="Logo" 
+                    width=150px
+                    />
+                <div>
+                    <h1 style="color: #1a252f;
+                                margin: 0;
+                                font-size: 32px;
+                                font-style: italic;
+                                color: #2c3e50;
+                                letter-spacing: 1px;
+                                ">SimAccu</h1>
+                    <p class="motto">Accounting that matter</p>
+                </div>
+            </div>
+        </div>
+        <!--main navigation-->
+        <div class="header-nav">
+            <!--temporary without pages to understand how to add pages-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="product.html">Our products</a></li>
+                    <li><a href="team.html">Our team</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--MAIN-->
+    <main id="main_body">
+        <h2>PAGE UNDER DEVELOPMENT</h2>
+    </main>
+    <!--FOOTER-->
+    <footer id="main-footer">
+    <div class="footer-content">
+        <p class="copyright">&copy; 2025 SimAccu Project</p>
+        <ul class="footer-info">
+            <li><span>Author:</span> Oleksandr Okolot</li>
+            <li><span>Location:</span> Kyiv, Ukraine</li>
+            <li><span>Year:</span> 2025</li>
+        </ul>
+    </div>
+</footer>
+</body>
+
+</html>
