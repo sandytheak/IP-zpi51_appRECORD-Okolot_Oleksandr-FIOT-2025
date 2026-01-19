@@ -60,7 +60,7 @@ footer {
     display: flex;      /* inner flex */
     flex-direction: row-reverse; /* image - text */
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background: white;
     padding: 20px;
     border: 1px solid #ccc;
@@ -160,7 +160,8 @@ section {
     margin: 0;
 }
 
-@media (max-width: 1020px) { /* width for iPhone and Android */
+
+@media (max-width: 420px) { /* width from google developer tools */
     .header-container {
         flex-direction: column; /* logo and text  vertical */
         text-align: center;
@@ -172,24 +173,80 @@ section {
     }
 
     nav ul {
-        flex-direction: column; /* Меню стає вертикальним */
+        flex-direction: column; /* vertical menu */
+        height: auto;
         align-items: center;
         gap: 10px;
     }
 
     .advantage_container {
-        flex-direction: column; /* Картки переваг стають у стовпчик */
+        flex-direction: column; /* vertical view */
         flex-wrap: wrap;
     }
 
     .advantage_block {
-        flex-direction: column; /* Картинка над текстом усередині картки */
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
-        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .advantage_block img {
+        display: none;
     }
 
     .advantage_text {
-        margin-right: 0;
-        margin-top: 10px;
+        margin: 0;
+        text-align: left;
+        width: 100%;
     }
+
+    .advantage_text h2,
+    .advantage_text p {
+        text-align: left;
+    }
+
+    /*change table to blocks */
+    section table, 
+    section thead, 
+    section tbody, 
+    section th, 
+    section td, 
+    section tr { 
+        display: block; 
+    }
+
+    section tr:first-child {
+        display: none;
+    }
+
+    section tr {
+        border: none;
+        background: #fff;
+    }
+
+    .table_01 td {
+        border: none;
+        position: relative;
+        padding-left: 15px;
+        padding-top: 0px;
+    }
+
+    .table_02 td {
+        border: none;
+        position: relative;
+        padding-left: 15px;
+        padding-top: 15px; /* place for header */
+    }
+
+    .mobile_header {
+        font-weight: bold;
+        padding-bottom: 0px;
+    }
+
+    /* Додаємо підписи через псевдоелементи */
+    .table_02 td:nth-of-type(1):before { content: "Accurate Accounting"; font-weight: bold; color: #104901; display: block; }
+    .table_02 td:nth-of-type(2):before { content: "Comprehensive Reporting"; font-weight: bold; color: #104901; display: block; }
+    .table_02 td:nth-of-type(3):before { content: "Actionable Analytics"; font-weight: bold; color: #104901; display: block; }
+
 }
