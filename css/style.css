@@ -179,6 +179,7 @@ section {
 
     .advantage_container {
         flex-direction: column; /* Картки переваг стають у стовпчик */
+        flex-wrap: wrap;
     }
 
     .advantage_block {
