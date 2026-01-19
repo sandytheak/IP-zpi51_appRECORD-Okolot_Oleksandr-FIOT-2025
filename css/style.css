@@ -162,7 +162,7 @@ section {
 
 @media (max-width: 375px) { /* width for iPhone and Android */
     .header-container {
-        flex-direction: column; /* Лого та текст стають один під одним */
+        flex-direction: column; /* logo and text  vertical */
         text-align: center;
     }
 
