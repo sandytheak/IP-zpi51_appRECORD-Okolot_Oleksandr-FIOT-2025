@@ -3,7 +3,7 @@
 <!-----HEADER----->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!----say browser that container width should be in line with screen size---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini CRM project</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
@@ -79,7 +79,12 @@
         <div class="header-nav">
             <!--temporary without pages to understand how to add pages-->
             <nav>
-                <ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navig-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="product.html">Our products</a></li>
@@ -91,19 +96,30 @@
     </header>
     <!--MAIN-->
     <main id="main_body">
-        <h2>PAGE UNDER DEVELOPMENT</h2>
+        <h1>PAGE UNDER DEVELOPMENT</h1>
     </main>
     <!--FOOTER-->
     <footer id="main-footer">
-    <div class="footer-content">
-        <p class="copyright">&copy; 2025 SimAccu Project</p>
-        <ul class="footer-info">
-            <li><span>Author:</span> Oleksandr Okolot</li>
-            <li><span>Location:</span> Kyiv, Ukraine</li>
-            <li><span>Year:</span> 2025</li>
-        </ul>
-    </div>
-</footer>
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 SimAccu Project</p>
+            <ul class="footer-info">
+                <li><span>Author:</span> Oleksandr Okolot</li>
+                <li><span>Location:</span> Kyiv, Ukraine</li>
+                <li><span>Year:</span> 2025</li>
+            </ul>
+        </div>
+    </footer>
+<script>
+    const menu = document.querySelector('#mobile-menu');
+    const navList = document.querySelector('.navig-list');
+
+    menu.addEventListener('click', () => {
+        // change class Active that show/hide menu
+        navList.classList.toggle('active');
+        // Animation
+        menu.classList.toggle('is-active');
+    });
+</script>
 </body>
 
 </html>
