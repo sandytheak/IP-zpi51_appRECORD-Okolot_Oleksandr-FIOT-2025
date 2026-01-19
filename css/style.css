@@ -160,7 +160,7 @@ section {
     margin: 0;
 }
 
-@media (max-width: 375px) { /* width for iPhone and Android */
+@media (max-width: 1020px) { /* width for iPhone and Android */
     .header-container {
         flex-direction: column; /* logo and text  vertical */
         text-align: center;
