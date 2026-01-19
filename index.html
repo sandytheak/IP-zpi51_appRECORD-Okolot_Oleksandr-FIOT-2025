@@ -79,7 +79,12 @@
         <div class="header-nav">
             <!--temporary without pages to understand how to add pages-->
             <nav>
-                <ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navig-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="product.html">Our products</a></li>
@@ -231,6 +236,17 @@
         </ul>
     </div>
 </footer>
+<script>
+    const menu = document.querySelector('#mobile-menu');
+    const navList = document.querySelector('.navig-list');
+
+    menu.addEventListener('click', () => {
+        // change class Active that show/hide menu
+        navList.classList.toggle('active');
+        // Animation
+        menu.classList.toggle('is-active');
+    });
+</script>
 </body>
 
 </html>

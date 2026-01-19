@@ -42,6 +42,11 @@ footer {
     font-style: italic;
 }
 
+/* menu for mobile view*/
+.menu-toggle {
+    display: none;
+}
+
 
 /* BODY ELEMENTS */
 
@@ -167,16 +172,57 @@ section {
         text-align: center;
     }
 
+    #logo {
+        width: 100px;
+        height: auto;
+        border-radius: 20%;
+    }
+
     #brand {
         flex-direction: column;
         gap: 5px;
     }
 
-    nav ul {
-        flex-direction: column; /* vertical menu */
-        height: auto;
-        align-items: center;
-        gap: 10px;
+    
+
+    /* Стилізація кнопки "бутерброда" */
+    .menu-toggle {
+        display: block; /* Показуємо тільки на мобільних */
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #34495e;
+        transition: 0.3s ease;
+    }
+
+    /* hide munu by default */
+    .navig-list {
+        display: none; 
+        flex-direction: column; /* vertical */
+        width: 100%;
+        position: absolute; /* menu over content */
+        top: 100%; /* close under header */
+        left: 0;
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #37f347;
+    }
+
+    /* class for js for click */
+    .navig-list.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 90%;
+        text-align: center;
+        padding: 5px 0;
+        border-top: 1px solid #dee2e6;
     }
 
     .advantage_container {
@@ -243,6 +289,7 @@ section {
         font-weight: bold;
         padding-bottom: 0px;
     }
+
 
     /* Додаємо підписи через псевдоелементи */
     .table_02 td:nth-of-type(1):before { content: "Accurate Accounting"; font-weight: bold; color: #104901; display: block; }
