@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini CRM project</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style contact.css" type="text/css">
 </head>
 
 <body>
@@ -18,7 +18,6 @@
                 padding: 10px 0;
                 position: sticky; /* fix header */
                 top: 0;
-                z-index: 1000;
             }
 
             nav {
@@ -87,8 +86,6 @@
                 <ul class="navig-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="product.html">Our products</a></li>
-                    <li><a href="team.html">Our team</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </nav>
@@ -96,7 +93,47 @@
     </header>
     <!--MAIN-->
     <main id="main_body">
-        <h1>PAGE UNDER DEVELOPMENT</h1>
+        <article class="contact-section">
+            <h2>Get in Touch with SimAccu Team</h2>
+            <p>Have questions about our financial tools or need help setting up your CRM? Our team is here to support your business growth.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><strong>Address:</strong> Kyiv, Ukraine</li>
+                        <li><strong>Email:</strong> support@simaccu.com</li>
+                        <li><strong>Phone:</strong> +380 (44) 123-45-67</li>
+                        <li><strong>Working Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="support">Technical Support</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="feedback">General Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </article>
     </main>
     <!--FOOTER-->
     <footer id="main-footer">
@@ -109,17 +146,17 @@
             </ul>
         </div>
     </footer>
-<script>
-    const menu = document.querySelector('#mobile-menu');
-    const navList = document.querySelector('.navig-list');
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const navList = document.querySelector('.navig-list');
 
-    menu.addEventListener('click', () => {
-        // change class Active that show/hide menu
-        navList.classList.toggle('active');
-        // Animation
-        menu.classList.toggle('is-active');
-    });
-</script>
+        menu.addEventListener('click', () => {
+            // change class Active that show/hide menu
+            navList.classList.toggle('active');
+            // Animation
+            menu.classList.toggle('is-active');
+        });
+    </script>
 </body>
 
 </html>

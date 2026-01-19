@@ -1,0 +1,62 @@
+@import url("style.css");
+
+/* Hero секція */
+.about-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f1f8f1;
+    border-bottom: 3px solid #37f347;
+}
+
+.about-hero h1 {
+    font-size: 36px;
+    color: #104901;
+}
+
+/* content block */
+.about-content {
+    padding: 40px 20px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+/* reverse content */
+.info-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-text {
+    flex: 2;
+}
+
+.info-text h2 {
+    color: #104901;
+    font-size: 28px;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.styled-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 480px) {
+    .info-block, .info-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-text ul {
+        text-align: left;
+    }
+}

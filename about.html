@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini CRM project</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style about.css" type="text/css">
 </head>
 
 <body>
@@ -18,7 +18,6 @@
                 padding: 10px 0;
                 position: sticky; /* fix header */
                 top: 0;
-                z-index: 1000;
             }
 
             nav {
@@ -87,8 +86,6 @@
                 <ul class="navig-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="product.html">Our products</a></li>
-                    <li><a href="team.html">Our team</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </nav>
@@ -96,7 +93,38 @@
     </header>
     <!--MAIN-->
     <main id="main_body">
-        <h1>PAGE UNDER DEVELOPMENT</h1>
+        <article class="about-hero">
+            <h1>About SimAccu</h1>
+            <p>Empowering Small Businesses with Integrated Financial Intelligence.</p>
+        </article>
+
+        <section class="about-content">
+            <div class="info-block">
+                <div class="info-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2025 in Kyiv, SimAccu was born out of a simple observation: small business owners spend too much time switching between scattered spreadsheets and complex CRM systems.</p>
+                    <p>Our mission is to provide an intuitive, secure, and accessible tool that unites financial accounting with customer relationship management.</p>
+                </div>
+                <div class="info-image">
+                    <img src="images/company-team.jpg" alt="SimAccu Team" class="styled-img">
+                </div>
+            </div>
+
+            <div class="info-block reverse">
+                <div class="info-text">
+                    <h2>Why SimAccu?</h2>
+                    <p>SimAccu isn't just another accounting app. It's a strategic partner for your business growth.</p>
+                    <ul>
+                        <li><strong>Unified Data:</strong> Your sales pipeline and ledgers talk to each other.</li>
+                        <li><strong>Security First:</strong> We use encryption to protect your sensitive financial data.</li>
+                        <li><strong>Mobility:</strong> Manage your business from your laptop or smartphone thanks to our fully responsive design.</li>
+                    </ul>
+                </div>
+                <div class="info-image">
+                    <img src="images/product-demo.jpg" alt="SimAccu Dashboard" class="styled-img">
+                </div>
+            </div>
+        </section>
     </main>
     <!--FOOTER-->
     <footer id="main-footer">

@@ -1,0 +1,69 @@
+@import url("style.css");
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.contact-info h3, .contact-form h3 {
+    color: #104901;
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+}
+
+/* Стилі форми */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #37f347;
+    color: #333;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2ecc71;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
