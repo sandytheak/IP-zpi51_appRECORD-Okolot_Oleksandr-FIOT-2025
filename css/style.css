@@ -21,7 +21,7 @@ footer {
     padding: 0 20px;
 }
 
-/* Стилізація бренду (лого + текст) */
+/* STYLE LOGO+TEXT */
 #brand {
     display: flex;
     align-items: center;
@@ -165,8 +165,9 @@ section {
     margin: 0;
 }
 
-
-@media (max-width: 420px) { /* width from google developer tools */
+/*Web breakpoints: Desktop Large: 1500, Desktop Small: 1024, Tablet Large: 768, */
+/*Tablet Small: 480, Mobile Large: 375, Mobile Small: 320*/
+@media (max-width: 480px) {
     .header-container {
         flex-direction: column; /* logo and text  vertical */
         text-align: center;
@@ -181,11 +182,9 @@ section {
     #brand {
         flex-direction: column;
         gap: 5px;
-    }
+    }    
 
-    
-
-    /* Стилізація кнопки "бутерброда" */
+    /* Menu button */
     .menu-toggle {
         display: block; /* Показуємо тільки на мобільних */
         cursor: pointer;
@@ -291,9 +290,65 @@ section {
     }
 
 
-    /* Додаємо підписи через псевдоелементи */
+    /* Addition data for pseudo-headers */
     .table_02 td:nth-of-type(1):before { content: "Accurate Accounting"; font-weight: bold; color: #104901; display: block; }
     .table_02 td:nth-of-type(2):before { content: "Comprehensive Reporting"; font-weight: bold; color: #104901; display: block; }
     .table_02 td:nth-of-type(3):before { content: "Actionable Analytics"; font-weight: bold; color: #104901; display: block; }
+
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        flex-direction: row; /* logo and text  horisontal */
+        align-items: center;
+        gap: 10px;
+    }
+
+    #logo {
+        width: 120px;
+        height: auto;
+        border-radius: 30%;
+    }
+
+    #brand {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .advantage_container {
+        display: flex;
+        flex-direction: column; /* vertical view */
+        gap: 20px;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .advantage_block {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .advantage_block img {
+        width: 80px;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    .advantage_text {
+        margin: 0;
+        text-align: left;
+        height: auto;
+        width: 100%;
+    }
+
+    .advantage_text h2,
+    .advantage_text p {
+        text-align: left;
+    }
 
 }
